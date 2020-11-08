@@ -4,25 +4,14 @@ import './App.css';
 
 import Message from './Message';
 
-const initialState = {
-  name: 'React',
-  message: 'TypeScript is great!',
-};
-
-type State = Readonly<typeof initialState>;
-
-class App extends Component<any, State> {
-  readonly state: State = initialState;
-
+class App extends Component {
   render() {
-    const { name, message } = this.state;
-
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
 
-          <Message name={name} message={message} />
+          <Message />
         </header>
       </div>
     );
