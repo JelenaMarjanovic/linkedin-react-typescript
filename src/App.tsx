@@ -29,7 +29,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         {values.map((value, index) => (
-          <p key={index}>
+          <p key={index + 1}>
             This value {value} is of {typeof value} value!
           </p>
         ))}
